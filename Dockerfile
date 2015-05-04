@@ -6,5 +6,5 @@ RUN apt-get update -qq && apt-get install -y \
 RUN mkdir /myapp
 WORKDIR /myapp
 ADD Gemfile /myapp/Gemfile
-RUN bundle install
+RUN NOKOGIRI_USE_SYSTEM_LIBRARIES=1 bundle install
 ADD . /myapp

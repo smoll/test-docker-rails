@@ -8,10 +8,10 @@ Basic idea from [GitHub](https://help.github.com/articles/duplicating-a-reposito
 
 ```
 cd ~/workspace
-git clone --bare https://github.com/smoll/docker-rails-seed.git
-cd docker-rails-seed.git
+git clone https://github.com/smoll/docker-rails-seed
+cd docker-rails-seed
 make
-rm .dockerignore && rm -rf bootstrap
+rm Makefile .dockerignore && rm -rf bootstrap
 
 # Make some basic modifications to the skeleton by hand here
 
